@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/Spinner"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tv_tip_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pagefailed_bg" />
+
+        <TextView
+            android:id="@+id/tv_tip_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="轻触重新加载"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</FrameLayout>

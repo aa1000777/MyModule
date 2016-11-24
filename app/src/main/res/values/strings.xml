@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyToolsApplication</string>
+    <string name="loading_tips">正在加载</string>
+    <string name="msg_project_empty_description">暂无项目介绍</string>
+</resources>

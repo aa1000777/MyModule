@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_full_holo_light"
+    android:gravity="center_vertical"
+    android:minWidth="300.0dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/DialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16.0dip"
+        android:text="提示"
+        android:textColor="#ff33b5e5"
+        android:textSize="18.0sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/titleline_popup" />
+
+    <TextView
+        android:id="@+id/DialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="center_vertical"
+        android:text="二个按钮的Dialog"
+        android:textColor="#ff333333"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffd4d4d4" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/transparent_blue_selector"
+            android:text="关闭"
+            android:textColor="#ff000000"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="#ffd4d4d4" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/transparent_blue_selector"
+            android:text="提交"
+            android:textColor="#ff000000"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

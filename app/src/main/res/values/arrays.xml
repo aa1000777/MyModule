@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 发现页面 -->
+    <string-array name="explore_title_array">
+        <item>推荐项目</item>
+        <item>热门项目</item>
+        <item>新增项目</item>
+        <item>最近更新</item>
+    </string-array>
+
+
+</resources>

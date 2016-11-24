@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头像设置" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/btn_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/list_item_image" />
+
+    <com.cjj.base.ui.CircleImageView
+        android:id="@+id/iv_civ1"
+        android:layout_below="@+id/recyclerView"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:clickable="true"
+        android:padding="1.0dip"
+        android:src="@drawable/image" />
+    <com.cjj.roundedimageviewlibrary.RoundedImageView
+        android:id="@+id/iv_riv1"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_below="@+id/iv_civ1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:riv_corner_radius="5.0dip" />
+</RelativeLayout>
